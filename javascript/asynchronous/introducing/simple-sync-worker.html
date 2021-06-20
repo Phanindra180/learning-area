@@ -11,7 +11,7 @@
       const worker = new Worker('worker.js');
 
       btn.addEventListener('click', () => {
-        worker.postMessage('Go!');
+        console.log(worker.postMessage('Go!'));
 
         let pElem = document.createElement('p');
         pElem.textContent = 'This is a newly-added paragraph.';
